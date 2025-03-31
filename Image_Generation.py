@@ -9,7 +9,7 @@ Number_Images = 15
 
 os.makedirs(Images_path)
 for label in labels:
-    os.makedirs(os.path.join(Images_path, label))                  #Create a directory for each label
+    os.makedirs(os.path.join(Images_path, label))               #Create a directory for each label
     capture = cv2.VideoCapture(0)                               #Access the camera - 0 denotes default webcam
     print(f"Collecting images for {label}")                     #Print the label being collected
     time.sleep(5)                                               #Give the camera 5 seconds to warm up
